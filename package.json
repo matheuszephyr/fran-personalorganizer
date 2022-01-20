@@ -1,8 +1,9 @@
 {
   "name": "fran-organizer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
-    "start": "ng serve",
+    "ng": "ng",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -10,9 +11,12 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~13.0.1",
     "@angular/animations": "~13.0.0",
+    "@angular/cli": "^13.1.4",
     "@angular/common": "~13.0.0",
     "@angular/compiler": "~13.0.0",
+    "@angular/compiler-cli": "~13.0.0",
     "@angular/core": "~13.0.0",
     "@angular/forms": "~13.0.0",
     "@angular/platform-browser": "~13.0.0",
@@ -21,13 +25,12 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.7.2",
+    "express": "^4.17.2",
+    "path": "^0.12.7",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4",
-    "@angular-devkit/build-angular": "~13.0.1",
-    "@angular/cli": "^13.1.4",
-    "@angular/compiler-cli": "~13.0.0",
-    "typescript": "~4.4.3"
+    "typescript": "~4.4.3",
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.1",
