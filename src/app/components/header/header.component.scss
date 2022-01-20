@@ -1,0 +1,32 @@
+.header{
+    &-container{
+
+    }
+
+    &-block{
+        display: flex;
+        width: 100%;
+        background-color: #98cecc;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+    &-title{
+        &-block{
+            display: flex;
+            align-items: center;
+            font-size: xx-large;
+            font-family: sans-serif;
+        }
+
+        &-img{
+            max-width: 70px;
+            display: flex;
+
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

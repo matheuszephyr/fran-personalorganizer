@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+$primary-font: sans-serif;
+$primary-color: #98cecc;
+$secondary-color: black;
+
+body{
+    margin: 0px;
+    font-family: $primary-font;
+}

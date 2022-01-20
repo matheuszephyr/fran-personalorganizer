@@ -1,0 +1,28 @@
+.home{
+    &-container{
+        padding: 1rem;
+
+    }
+
+    
+}
+
+
+.manutencao-message{
+    display: flex;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+
+    &-icon{
+        color: yellow;
+        font-size: 40px;
+        margin: 0.5rem;    
+    }
+
+    
+}
