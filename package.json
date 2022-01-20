@@ -23,11 +23,15 @@
     "bootstrap-icons": "^1.7.2",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@angular-devkit/build-angular": "~13.0.1",
+    "@angular/cli": "^13.1.4",
+    "@angular/compiler-cli": "~13.0.0",
+    "typescript": "~4.4.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.1",
-    "@angular/cli": "~13.0.1",
+    "@angular/cli": "^13.1.4",
     "@angular/compiler-cli": "~13.0.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
@@ -39,5 +43,8 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.4.3"
   },
-  "engines" : { "node" : "16.13.0" }
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.2"
+  }
 }
