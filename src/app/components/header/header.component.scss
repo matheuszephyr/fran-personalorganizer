@@ -9,7 +9,8 @@
         align-items: center;
         color: #311512;
         padding: 0.5rem;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-flow: wrap;
     }
 
     &-title {
@@ -35,6 +36,7 @@
             display: flex;
             align-items: center;
             font-size: 2rem;
+            flex-flow: wrap;
 
             i {
                 color: #311512;
@@ -58,6 +60,7 @@
     transition: 0.5s;
     border-radius: 50px;
     overflow: hidden;
+    display: flex;
 }
 
 .header-menu {
