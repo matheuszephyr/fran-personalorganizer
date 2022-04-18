@@ -1,14 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "./styles/variables.scss";
 
-$primary-font: sans-serif;
-$primary-color: #98cecc;
-$secondary-color: black;
-$terciary-color: #311512;
+//GOOGLE FONTS
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@500&display=swap");
 
-body{
+body {
     margin: 0px;
-    font-family: $primary-font;
+    font-family: var(--primary-font) !important;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+#router-container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 90%, var(--primary-color) 100%);
+}
+
+.base {
+    &-primary-title {
+        font-family: var(--title-font) !important;
+        font-size: 3em;
+        font-weight: 900;
+        color: #3e2723;
+    }
+
+    &-sub-title {
+        font-family: var(--title-font) !important;
+        font-size: 2em;
+        color: var(--secondary-color);
+        font-weight: bold;
+        width: fit-content;
+        padding: 0.1rem 1rem;
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, var(--primary-color2), transparent) 1 40%;
+        text-shadow: 1px 2px 4px #4d4d4d;
+    }
+
+    &-button{
+        background-color: var(--secondary-color);
+        color: var(--primary-color2);
+        border: solid 0.2rem var(--primary-color2);
+        padding: 0.7rem;        
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        width: fit-content;
+        box-shadow: 3px 3px 5px #4d4d4d;
+        margin: 0rem 0.5rem;
+        min-width: fit-content;
+        max-width: 100%;
+
+        &.withicon{
+
+            i{
+                display: flex;
+                margin-right: 0.5rem;
+            }
+        }
+
+        &:hover{
+            color: var(--action-color);
+            border: solid 0.2rem var(--action-color);
+            cursor: pointer;
+        }
+    }
 }

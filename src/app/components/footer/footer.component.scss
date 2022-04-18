@@ -1,13 +1,45 @@
-.footer{
-    &-container{
+.footer {
+    &-container {
         display: flex;
         width: 100%;
-        background-color: #98cecc;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        color: black;
+        color: var(--secondary-color);
         padding: 1rem;
-        position: absolute;
+        position: relative;
         bottom: 0px;
+        background: white;
+        background: linear-gradient(180deg, white 0%, var(--primary-color) 100%);
+        margin-top: 2rem;
     }
+
+    &-content {
+        &-block {
+            font-size: 1.5rem;
+            font-family: var(--logo-font);
+        }
+    }
+
+    &-dev {
+        &-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            >span{
+                margin-right: 0.5rem;
+            }
+
+            .bi-github{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+  .footer-container{
+      flex-direction: column !important;
+  }
 }

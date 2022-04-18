@@ -1,0 +1,107 @@
+<div class="profile-container">
+    <div class="profile-title">
+        <div class="base-primary-title">Personal Organizer em Ribeirão Preto e Região</div>
+    </div>
+
+    <div class="profile-img">
+        <div class="img-block">
+            <img src="../../../assets/img/profile.jpg">
+        </div>
+    </div>
+
+    <div class="profile-license profile-item">
+        <div class="base-sub-title subtitle">Certificados</div>
+        <div class="item profile-license-item">
+            <i class="bi bi-mortarboard icon"></i><span class="text">Personal Organizer Reorganize -
+                <b>28/12/2021</b></span>
+        </div>
+    </div>
+
+    <div class="profile-contact profile-item">
+        <div class="base-sub-title subtitle">Contatos</div>
+        <div class="social-block item">
+            <div class="base-button withicon social-button" (click)="socialMediaRedirect('instagram')">
+                <i class="bi bi-instagram"></i>
+                <span class="">Instagram</span>
+            </div>
+            <div class="base-button withicon social-button" (click)="socialMediaRedirect('facebook')">
+                <i class="bi bi-facebook"></i>
+                <span class="">Facebook</span>
+            </div>
+            <div class="base-button withicon social-button" (click)="socialMediaRedirect('whatsapp')">
+                <i class="bi bi-whatsapp"></i>
+                <span class="">WhatsApp</span>
+            </div>
+            <div class="base-button withicon social-button" (click)="socialMediaRedirect('email')">
+                <i class="bi bi-envelope"></i>
+                <span class="">E-mail</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-skills profile-item">
+        <div class="base-sub-title subtitle">Especialidades</div>
+        <div class="item">Baby, Enlutados, Fotos, Home Office, Idosos, Mudanças Empresariais, Mudanças Residenciais,
+            Outros,
+            Residencial, Treinamento de Funcionários</div>
+    </div>
+
+    <div class="profile-about profile-item">
+        <div class="base-sub-title subtitle">Sobre Fran Organizer</div>
+        <div class="item">Olá, meu nome é Francisca Franximeri, profissional de Recursos Humanos em transição de
+            carreira. Sou filha,
+            mãe, esposa e amiga apaixonada por organização. Gosto muito de ajudar as pessoas, por isso me identifiquei
+            tanto como Personal Organizer. </div>
+    </div>
+
+    <div class="profile-location profile-item">
+        <div class="base-sub-title subtitle">Locais onde eu atendo</div>
+        <div class="profile-location-block">
+            <div class="search-city">
+                <label class="label" for="search-city-input">Procurar Cidade</label>
+                <div class="block">
+                    <input id="search-city-input" type="search" class="form-control input" />
+                    <button id="search-city-button" type="button" class="btn btn-primary button" (click)="searchCity()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="city-group-block">
+                <div class="city-item" *ngFor="let city of cityList">                    
+                    <div class="city-name" (click)="searchCity(city)">{{city}}</div>
+                </div>
+            </div>
+
+            <div class="google-map-block">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="1000" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Orlandia&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://fmovies-online.net">fmovies</a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 1000px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">embed custom google map</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 1000px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>    
+
+    <app-budget-create></app-budget-create>
+
+</div>

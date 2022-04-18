@@ -5,28 +5,39 @@
     &-block {
         display: flex;
         width: 100%;
-        background-color: #98cecc;
+        background-color: var(--primary-color);
         align-items: center;
-        color: #311512;
-        padding: 0.5rem;
+        color: var(--secondary-color);
+        padding: 0em 1em;
         justify-content: space-around;
         flex-flow: wrap;
+    }
+
+    &-img{
+        &-block{
+            display: flex;
+            align-items: center;
+
+            .page-logo{
+                max-width: 100px;
+                display: flex;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }        
     }
 
     &-title {
         &-block {
             display: flex;
-            align-items: center;
-            font-size: xx-large;
-            font-family: sans-serif;
-        }
+            align-items: center;            
 
-        &-img {
-            max-width: 70px;
-            display: flex;
-
-            img {
-                max-width: 100%;
+            .title{
+                font-family: var(--logo-font);
+                font-size: 5rem;
+                text-align: center;
             }
         }
     }
@@ -39,8 +50,13 @@
             flex-flow: wrap;
 
             i {
-                color: #311512;
+                color: var(--secondary-color);
                 margin: 0px 0.5rem;
+
+                &:hover {
+                    color: var(--action-color);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -55,7 +71,7 @@
 
 .header-nav {
     position: relative;
-    background-color: #fff;
+    background-color: var(--background-color);
     padding: 0.5rem;
     transition: 0.5s;
     border-radius: 50px;
@@ -102,7 +118,7 @@
             position: relative;
             display: block;
             padding: 4px 0;
-            color: #311512;
+            color: var(--secondary-color);
             text-decoration: none;
             text-transform: uppercase;
             transition: 0.5s;
@@ -115,7 +131,7 @@
                 left: 0;
                 width: 100%;
                 height: 3px;
-                background: #98cecc;
+                background: var(--primary-color);
                 transform: scaleX(0);
                 transform-origin: right;
                 transition: transform 0.5s;
@@ -146,7 +162,7 @@
     width: 30px;
     height: 4px;
     border-radius: 50px;
-    background-color: #311512;
+    background-color: var(--secondary-color);
     pointer-events: none;
     transition: 0.5s;
 }
